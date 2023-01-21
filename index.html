@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Alfian Erliansyah</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                display: grid;
+                grid-template-rows: 1fr max-content;
+                grid-template-columns: 1fr 2fr 2fr;
+                background-color: #a6a6a6;
+                height: 100vh;
+                margin: 0;
+                min-width: 240px;
+            }
+            h1 {
+                display: contents;
+                font-size: 16vw;
+            }
+            @media screen and (max-width: 240px) {
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+            h1 span {
+                opacity: .45;
+                text-decoration: underline;
+                text-decoration-color: #9d9d9d;
+            }
+            h1 span:nth-of-type(1) {
+                color: #ffffff80;
+                grid-column: 1 / span 2;
+                grid-row: 2 / span 1;
+                z-index: 1;
+                text-align: left;
+                margin-left: 2vw;
+            }
+            h1 span:nth-of-type(2) {
+                color: #80808080;
+                grid-column: 2 / span 2;
+                grid-row: 2 / span 1;
+                text-align: right;
+                margin-right: 2vw;
+            }
+            ul {
+                font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+                list-style: none;
+                grid-area: 1 / 2 / auto;
+                margin: 0;
+                padding: 2rem 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            li {
+                margin-bottom: 1rem;
+            }
+            a {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            <span>Alfian</span>
+            <span>Erliansyah</span>
+        </h1>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/alfianerliansyah/">LinkedIn</a></li>
+            <li><a href="https://github.com/alfianerlian/">GitHub</a></li>
+        </ul>
+    </body>
+</html>
